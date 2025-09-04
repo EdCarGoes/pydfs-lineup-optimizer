@@ -12,7 +12,7 @@ from pydfs_lineup_optimizer.lineup_exporter import FanDuelCSVLineupExporter
 class FanDuelSingleGameSettings(BaseSettings):
     site = Site.FANDUEL_SINGLE_GAME
     budget = 60000
-    max_from_one_team = 5
+    max_from_one_team = 4
     csv_importer = FanDuelMVPCSVImporter  # type: Type[FanDuelCSVImporter]
     csv_exporter = FanDuelCSVLineupExporter
 
@@ -20,6 +20,9 @@ class FanDuelSingleGameSettings(BaseSettings):
 @SitesRegistry.register_settings
 class FanDuelSingleGameFootballSettings(FanDuelSingleGameSettings):
     sport = Sport.FOOTBALL
+    budget = 60000
+    max_from_one_team = 5
+    csv_importer = build_fanduel_single_game_importer(mvp=True, star=False, pro=False)
     extra_rules = [FanduelSingleGameMaxQBRule]
     positions = [
         LineupPosition('MVP', ('MVP', )),
