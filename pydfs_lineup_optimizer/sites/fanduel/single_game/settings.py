@@ -22,11 +22,10 @@ class FanDuelSingleGameFootballSettings(FanDuelSingleGameSettings):
     sport = Sport.FOOTBALL
     budget = 60000
     max_from_one_team = 5
-    csv_importer = build_fanduel_single_game_importer(mvp=True, star=False, pro=False)
+    # csv_importer = build_fanduel_single_game_importer(mvp=True, star=False, pro=False)
     extra_rules = [FanduelSingleGameMaxQBRule]
     positions = [
         LineupPosition('MVP', ('MVP', )),
-        LineupPosition('UTIL', ('QB', 'WR', 'RB', 'TE', 'K')),
         LineupPosition('UTIL', ('QB', 'WR', 'RB', 'TE', 'K')),
         LineupPosition('UTIL', ('QB', 'WR', 'RB', 'TE', 'K')),
         LineupPosition('UTIL', ('QB', 'WR', 'RB', 'TE', 'K')),
