@@ -76,7 +76,7 @@ class YahooCSVLineupExporter(CSVLineupExporter):
 class FanDuelCSVLineupExporter(CSVLineupExporter):
     EXTRA_COLUMNS = ()
     COLUMNS_MAPPING = {
-        'MVP': 'MVP - 2X Points',
+        'MVP': 'MVP - 1.5X Points',
         'STAR': 'STAR - 1.5X Points',
         'PRO': 'PRO - 1.2X Points',
         'CAPTAIN': 'Captain - 1.5x Pts',
