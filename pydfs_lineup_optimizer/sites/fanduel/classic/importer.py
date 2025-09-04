@@ -89,6 +89,7 @@ class FanDuelMVPCSVImporter(FanDuelCSVImporter):
         for player in players:
             mvp_player = deepcopy(player)
             mvp_player.fppg *= 1.5
+            mvp_player.salary *= 1.5
             mvp_player._original_positions = player.positions
             mvp_player.positions = ('MVP', )
             mvps.append(mvp_player)
