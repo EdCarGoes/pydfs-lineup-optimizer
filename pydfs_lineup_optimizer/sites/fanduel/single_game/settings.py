@@ -11,7 +11,7 @@ from pydfs_lineup_optimizer.lineup_exporter import FanDuelCSVLineupExporter
 
 class FanDuelSingleGameSettings(BaseSettings):
     site = Site.FANDUEL_SINGLE_GAME
-    budget = 50000
+    budget = 60000
     max_from_one_team = 5
     csv_importer = FanDuelMVPCSVImporter  # type: Type[FanDuelCSVImporter]
     csv_exporter = FanDuelCSVLineupExporter
