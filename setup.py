@@ -2,20 +2,20 @@ import os
 from setuptools import setup, find_packages
 
 
-exec(open('pydfs_lineup_optimizer/version.py').read())
+exec(open('pydfs_lineup_optimizer_ecg/version.py').read())
 
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name='pydfs-lineup-optimizer',
+    name='pydfs-lineup-optimizer-ecg',
     version=__version__,
     packages=find_packages(exclude=['tests*']),
-    url='https://github.com/DimaKudosh/pydfs-lineup-optimizer',
+    url='https://github.com/EdCarGoes/pydfs-lineup-optimizer-ecg',
     license='MIT',
-    author='Dima Kudosh',
-    author_email='dimakudosh@gmail.com',
+    author='EdCarGoes',
+    author_email='edward454969@gmail.com',
     description='Tool for creating optimal lineups for daily fantasy sports',
     keywords=['dfs', 'fantasy', 'sport', 'lineup', 'optimize', 'optimizer', 'nba', 'nfl', 'nhl', 'mlb'],
     install_requires=['PuLP==2.4', 'pytz>=2020.5'],
