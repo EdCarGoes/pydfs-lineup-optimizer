@@ -12,6 +12,7 @@ def build_fanduel_single_game_importer(mvp=True, star=False, pro=False) -> Type[
                 if mvp:
                     mvp_player = deepcopy(player)
                     mvp_player.fppg *= 2
+                    mvp_player.salary *= 2
                     mvp_player._original_positions = player.positions
                     mvp_player.positions = ('MVP', )
                     extra_players.append(mvp_player)
