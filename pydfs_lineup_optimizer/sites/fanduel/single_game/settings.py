@@ -28,7 +28,6 @@ class FanDuelSingleGameFootballSettings(FanDuelSingleGameSettings):
         LineupPosition('UTIL', ('QB', 'WR', 'RB', 'TE', 'K')),
         LineupPosition('UTIL', ('QB', 'WR', 'RB', 'TE', 'K')),
         LineupPosition('UTIL', ('QB', 'WR', 'RB', 'TE', 'K')),
-        LineupPosition('UTIL', ('QB', 'WR', 'RB', 'TE', 'K')),
     ]
 
 
