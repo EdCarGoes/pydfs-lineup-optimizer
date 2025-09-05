@@ -20,6 +20,7 @@ class FanDuelSingleGameSettings(BaseSettings):
 @SitesRegistry.register_settings
 class FanDuelSingleGameFootballSettings(FanDuelSingleGameSettings):
     sport = Sport.FOOTBALL
+    budget = 20000
     max_from_one_team = 5
     extra_rules = [FanduelSingleGameMaxQBRule]
     positions = [
