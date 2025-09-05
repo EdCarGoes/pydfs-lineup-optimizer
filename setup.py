@@ -2,7 +2,7 @@ import os
 from setuptools import setup, find_packages
 
 
-exec(open('pydfs_lineup_optimizer_ecg/version.py').read())
+exec(open('pydfs_lineup_optimizer/version.py').read())
 
 
 def read(fname):
